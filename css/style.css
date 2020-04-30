@@ -1,0 +1,106 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+    background: url(img/technology-785742_960_720.jpg);
+    background-size: cover;
+    background-position: start;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "name name name" "name name name" "name name name" "name name name" "skills skills skills" "skills skills skills" "skills skills skills" "skills skills skills" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge";
+}
+
+nav {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: nav;
+    grid-template-areas: "nav_me nav_media";
+}
+
+a {
+    margin: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.nav_about_me {
+    justify-self: start;
+    align-self: center;
+    grid-area: nav_me;
+}
+
+.nav_social_media {
+    justify-self: end;
+    align-self: center;
+    grid-area: nav_media;
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+    color: #ffffff;
+    justify-self: center;
+    align-self: center;
+}
+
+.name h1 {
+    font-size: 50px;
+}
+
+.name legend {
+    font-size: 30px;
+}
+
+.skills {
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "skills1 skills2" "skills1 skills2" "skills1 skills2";
+    background-color: #ffffff;
+    font-size: 30px;
+}
+
+.skills1 {
+    grid-area: skills1;
+    justify-self: center;
+    align-self: center;
+}
+
+.skills2 {
+    grid-area: skills2;
+    justify-self: center;
+    align-self: center;
+}
+
+.knowledge {
+    grid-area: knowledge;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "knowledge_title knowledge_title" "knowledge1 knowledge2";
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #000;
+}
+
+.knowledge1 {
+    
+    grid-area: knowledge1;
+    align-self: center;
+    justify-self: center;
+}
+
+.knowledge2 {
+    grid-area: knowledge2;
+    align-self: center;
+    justify-self: center;
+}
+
+.knowledge_title {
+    grid-area: knowledge_title;
+    align-self: center;
+    justify-self: center;
+}
