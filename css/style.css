@@ -4,8 +4,11 @@ html {
 
 #content {
     background: url(img/technology-785742_960_720.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: start;
     display: grid;
     grid-auto-rows: minmax(100px, auto);
     grid-template-columns: repeat(3, 1fr);
@@ -40,6 +43,7 @@ a {
 }
 
 .name {
+    
     grid-area: name;
     text-align: center;
     color: #ffffff;
@@ -48,6 +52,7 @@ a {
 }
 
 .name h1 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
 }
 
