@@ -64,7 +64,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "skills1 skills2" "skills1 skills2" "skills1 skills2";
-    background-color: #ffffff;
+    background-color: #204051;
+    color: #fff;
     font-size: 30px;
 }
 
@@ -88,7 +89,7 @@ a {
     grid-template-areas: "knowledge_title knowledge_title" "knowledge1 knowledge2" "knowledge1 knowledge2";
     color: #ffffff;
     font-size: 30px;
-    background-color: #000;
+    background-color: #3b6978;
 }
 
 .knowledge li {
@@ -121,7 +122,8 @@ a {
     padding: 20px;
     grid-area: about_me;
     display: grid;
-    background-color: #ffffff;
+    background-color: #84a9ac;
+    color: #fff;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "education contact" "education contact";
     font-size: 30px;
@@ -149,35 +151,40 @@ a {
 }
 
 .cv {
-    color: #ffffff;
-    background-color: #000;
+    color: #fff;
+
+    background-color: #679b9b;
     font-size: 30px;
     grid-area: curriculum;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-areas: 
-    "cv_button"
-    "cv_button"
-    "cv_button"
+    "cv_link"
+    "cv_link"
+    "cv_link"
     ;
     text-align: center;
     
 }
-.cv_button{
+.cv_link{
     
-    grid-area: cv_button;
+    grid-area: cv_link;
     justify-self: center;
     align-self: center;
+    
 }
-button{
-    margin-top: 20px;
-    background-color: DodgerBlue;
+.cv a{
+    
+    background-color: #142850;
     border: none;
-    color: white;
-    padding: 12px 30px;
+    color: #fff;
+    padding: 10px 10px;
     cursor: pointer;
     font-size: 20px;
     width: 100%;
+}
+.cv h1{
+    margin: 20px;
 }
 
 
@@ -191,7 +198,7 @@ button{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "skills1" "skills2";
-        background-color: #ffffff;
+        background-color: #204051;
         font-size: 30px;
     }
     .skills1 {
@@ -212,7 +219,7 @@ button{
         grid-template-areas: "knowledge_title" "knowledge1" "knowledge2";
         color: #ffffff;
         font-size: 30px;
-        background-color: #000;
+        background-color: #3b6978;
     }
     .knowledge1 {
         grid-area: knowledge1;
