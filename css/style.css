@@ -12,7 +12,7 @@ html {
     display: grid;
     grid-auto-rows: minmax(100px, auto);
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "nav nav nav" "name name name" "name name name" "name name name" "name name name" "skills skills skills" "skills skills skills" "skills skills skills" "skills skills skills" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge";
+    grid-template-areas: "nav nav nav" "name name name" "name name name" "name name name" "name name name" "skills skills skills" "skills skills skills" "skills skills skills" "skills skills skills" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "knowledge knowledge knowledge" "about_me about_me about_me" "about_me about_me about_me" "about_me about_me about_me" "about_me about_me about_me" "curriculum curriculum curriculum" "curriculum curriculum curriculum" "curriculum curriculum curriculum";
 }
 
 nav {
@@ -43,7 +43,6 @@ a {
 }
 
 .name {
-    
     grid-area: name;
     text-align: center;
     color: #ffffff;
@@ -92,6 +91,10 @@ a {
     background-color: #000;
 }
 
+.knowledge li {
+    padding: 10px;
+}
+
 .knowledge1 {
     padding: 10px;
     grid-area: knowledge1;
@@ -114,15 +117,80 @@ a {
     justify-self: center;
 }
 
-@media(max-width:426px) {
+.about_me {
+    padding: 20px;
+    grid-area: about_me;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "education contact" "education contact";
+    font-size: 30px;
+}
+
+.education {
+    grid-area: education;
+    align-self: center;
+    justify-self: center;
+}
+
+.education h1, .contact h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.education li, .contact li {
+    margin-bottom: 20px;
+}
+
+.contact {
+    grid-area: contact;
+    align-self: center;
+    justify-self: center;
+}
+
+.cv {
+    color: #ffffff;
+    background-color: #000;
+    font-size: 30px;
+    grid-area: curriculum;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "cv_button"
+    "cv_button"
+    "cv_button"
+    ;
+    text-align: center;
+    
+}
+.cv_button{
+    
+    grid-area: cv_button;
+    justify-self: center;
+    align-self: center;
+}
+button{
+    margin-top: 20px;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+@media(max-width:558px) {
+    #container {
+        padding: 50px;
+    }
     .skills {
         text-align: center;
         grid-area: skills;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        "skills1"
-        "skills2";
+        grid-template-areas: "skills1" "skills2";
         background-color: #ffffff;
         font-size: 30px;
     }
@@ -133,12 +201,8 @@ a {
     }
     .skills2 {
         grid-area: skills2;
-        justify-self: 
-        center;
+        justify-self: center;
         align-self: start;
-    }
-    #container {
-        padding: 50px;
     }
     .knowledge {
         padding: 20px;
@@ -162,6 +226,30 @@ a {
     }
     .knowledge_title {
         grid-area: knowledge_title;
+        align-self: center;
+        justify-self: center;
+    }
+    .about_me {
+        padding: 10px;
+        grid-area: about_me;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "education" "contact";
+    }
+    .education {
+        grid-area: education;
+        align-self: center;
+        justify-self: center;
+    }
+    .education h1, .contact h1 {
+        text-align: center;
+        margin: 20px;
+    }
+    .education li {
+        margin-bottom: 20px;
+    }
+    .contact {
+        grid-area: contact;
         align-self: center;
         justify-self: center;
     }
