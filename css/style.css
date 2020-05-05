@@ -123,7 +123,7 @@ a {
     grid-area: about_me;
     display: grid;
     background-color: #84a9ac;
-    color: #fff;
+    color: #000;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "education contact" "education contact";
     font-size: 30px;
@@ -151,7 +151,7 @@ a {
 }
 
 .cv {
-    color: #fff;
+    color: #000;
 
     background-color: #679b9b;
     font-size: 30px;
