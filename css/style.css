@@ -123,7 +123,7 @@ a {
     grid-area: about_me;
     display: grid;
     background-color: #84a9ac;
-    color: #000;
+    color: #fff;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "education contact" "education contact";
     font-size: 30px;
@@ -151,7 +151,7 @@ a {
 }
 
 .cv {
-    color: #000;
+    color: #fff;
 
     background-color: #679b9b;
     font-size: 30px;
@@ -237,7 +237,8 @@ a {
         justify-self: center;
     }
     .about_me {
-        padding: 10px;
+        padding:10px
+        ;
         grid-area: about_me;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
