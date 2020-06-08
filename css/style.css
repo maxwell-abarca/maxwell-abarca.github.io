@@ -184,6 +184,7 @@ a {
 }
 
 @media(max-width:558px) {
+    
     #container {
         padding: 50px;
     }
