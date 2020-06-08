@@ -87,9 +87,9 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "knowledge_title knowledge_title" "knowledge1 knowledge2" "knowledge1 knowledge2";
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
-    background-color: #3b6978;
+    background-color: #fff;
 }
 
 .knowledge li {
@@ -122,7 +122,9 @@ a {
     padding: 20px;
     grid-area: about_me;
     display: grid;
-    background-color: #84a9ac;
+    background-color: #204051;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     color: #fff;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "education contact" "education contact";
@@ -152,29 +154,22 @@ a {
 
 .cv {
     color: #fff;
-
-    background-color: #679b9b;
+    background-color: #000;
     font-size: 30px;
     grid-area: curriculum;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-areas: 
-    "cv_link"
-    "cv_link"
-    "cv_link"
-    ;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "cv_link" "cv_link" "cv_link";
     text-align: center;
-    
 }
-.cv_link{
-    
+
+.cv_link {
     grid-area: cv_link;
     justify-self: center;
     align-self: center;
-    
 }
-.cv a{
-    
+
+.cv a {
     background-color: #142850;
     border: none;
     color: #fff;
@@ -183,10 +178,10 @@ a {
     font-size: 20px;
     width: 100%;
 }
-.cv h1{
+
+.cv h1 {
     margin: 20px;
 }
-
 
 @media(max-width:558px) {
     #container {
@@ -216,10 +211,11 @@ a {
         grid-area: knowledge;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        border-top: 2px solid #000000;
         grid-template-areas: "knowledge_title" "knowledge1" "knowledge2";
-        color: #ffffff;
+        color: #000000;
         font-size: 30px;
-        background-color: #3b6978;
+        background-color: #fff;
     }
     .knowledge1 {
         grid-area: knowledge1;
@@ -237,8 +233,7 @@ a {
         justify-self: center;
     }
     .about_me {
-        padding:10px
-        ;
+        padding: 10px;
         grid-area: about_me;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
